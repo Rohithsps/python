@@ -1,0 +1,43 @@
+
+FACTORIAL RECURSIVE METHOD?
+def factorial_recursive(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+n = 5
+result = factorial_recursive(n)
+print(f"The factorial of {n} is {result}
+
+FACTORIAL ITERATIVE METHOD?
+def k(n):
+    n=int(input("enter the favourite interger  "))
+    result = 1                   // Inside the result initialized to 1. This variable will store the result of the factorial calculation.
+    for i in range(1, n + 1):   //here for example: If input is 5 then loop works  5*4,4*3,3*2,2*1  upto = i the loop wil continue   
+    result*=i
+    return result
+
+# Example usage:
+n = 5
+result = k(n)
+print(f"The factorial of {n} is {result}")
+
+
+reverse the string with using slicing ?
+
+text = "Hello, World!"
+reversed_text = text[::-1]
+print(reversed_text)
+
+REVERSE THE STRING USING LOOP?
+text = "Hello, World!"
+reversed_text = ""
+for char in text:
+    reversed_text = char + reversed_text
+print(reversed_text)
+
+REVERSE THE STRING USING reversed() and join();
+text = "Hello, World!"
+reversed_text = ''.join(reversed(text))//(''.join(...) joins the characters from the reversed iterator back together into a single string.
+print(reversed_text)
+
